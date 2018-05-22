@@ -5,7 +5,7 @@ class Footer extends Component {
     return(
       <div>
         <h1> this is footer page </h1>
-
+        <p>{this.props.msg}</p>
       </div>
     );
   }
