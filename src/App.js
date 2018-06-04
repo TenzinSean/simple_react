@@ -5,6 +5,10 @@ import NavBar from './NavBar';
 import Header from './Header';
 import Footer from './Footer';
 import { Link } from 'react-router';
+import Section from './section';
+import Gallery from './gallery';
+import Contact from './Contact';
+
 
 class App extends Component {
   render() {
@@ -12,6 +16,9 @@ class App extends Component {
       <div>
         <NavBar/>
         <Header />
+        <Section />
+        <Gallery />
+        <Contact />
         <Footer msg="Hello there"/>
       </div>
     );
