@@ -56,23 +56,24 @@ class Contact extends Component {
         'purple',
         'green',
         'black',
-        'pink'
+        'pink',
+        '#333'
       ],
       selectedColor: '',
     };
   }
 
   componentDidMount() {
-    this._getRandomColor()
+
 
   }
 
-  _getRandomColor() {
+  /*_getRandomColor() {
     var item = this.state.bgColor[Math.floor(Math.random() *this.state.bgColor.length)];
     this.setState({
       selectedColor: item,
     })
-  }
+  }*/
 
   render() {
     const size = {
@@ -80,13 +81,22 @@ class Contact extends Component {
       height: 300,
     };
 
+    const bg = {
+      backgroundColor: '#333'
+    }
+
+    const  colorButton = {
+      backgroundColor: "#333",
+      border: "1px solid #fff"
+    }
+
     const view = 'list';
     const theme = 'black';
 
     return (
     <div>
 
-        <section className="contac" style={{background: this.state.selectedColor}}>
+        <section className="contac" style={bg}>
           <div className="container">
             <div className="row">
               <div className="col-md-12">
@@ -96,7 +106,7 @@ class Contact extends Component {
                     view={view}
                     theme={theme}
                 />
-                <button className="btn btn-primary lg-3" onClick={() => this._getRandomColor()}>Enter </button><br/>
+              <button className="btn btn-primary"  style = { colorButton }>Enter </button><br/>
             </div>
             </div>
           </div>

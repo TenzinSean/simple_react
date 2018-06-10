@@ -3,6 +3,7 @@ body , html {
   padding: 0;
   background: #333;
   color: #fff;
+  font-family: helvetica;
 }
 
 .heading {
@@ -18,7 +19,7 @@ body , html {
   background:url('https://images.pexels.com/photos/34140/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size:cover;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 500px;
   padding-bottom:10px;
   opacity: 0.90;
 }

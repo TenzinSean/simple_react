@@ -61,12 +61,25 @@ class Section extends Component {
 
     }
 
+    const colorBg = {
+      backgroundColor: "#333"
+    }
+
+    const colorText = {
+      backgroundColor: "#fff"
+    }
+
+    const colorTime = {
+      color:"#333",
+      backgroundColor: "#fff"
+    }
+
     const objectTime = {
       marginTop:"40px"
     }
     return (
       <div>
-      <section className="mi">
+      <section className="mi" style={colorBg}>
         <div className="container">
           <div className="row">
             <div className="col-md-8  middle">
@@ -78,8 +91,8 @@ class Section extends Component {
                 <div className="card-header">
                   Blog: Tenzin Sean
                 </div>
-              <div className="card-body">
-                <blockquote className="blockquote mb-0">
+              <div className="card-body" style={ colorTime }>
+                <blockquote className="blockquote mb-0" style={ colorText }>
                   <p>I am Tenzin Sean. I love coding and reading books.</p>
                   <footer className="blockquote-footer">Tenzin</footer>
                 </blockquote>

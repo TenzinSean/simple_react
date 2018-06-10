@@ -8,6 +8,7 @@ import { Link } from 'react-router';
 import Section from './section';
 import Gallery from './gallery';
 import Contact from './Contact';
+import Film from './film';
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
         <Gallery />
         <Contact />
         <Footer msg="Hello there"/>
+        <Film />
       </div>
     );
   }
