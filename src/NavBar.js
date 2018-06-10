@@ -53,19 +53,39 @@ class NavBar extends Component {
       top: "-20px",
       bottom: "70px"
     }
+
+    const header = {
+      position: "absolute",
+      left: "30px",
+      right: "1px",
+      top: "190px",
+      fontSize: "30px"
+    }
+
+    const link1 = {
+      paddingTop: "60px",
+      paddingRight: "20px"
+    }
+
+    const headerone = {
+      marginTop: "-10px"
+    }
     return (
       <div>
           <section className="main-4">
             <div className="main-2">
-            <ul>
+            <ul style={link1}>
               <li><Link to="/Contact">Contact</Link></li>
               <li><Link to="/About">Quotes</Link></li>
               <li><Link to="/Home">Home</Link></li>
             </ul>
-            <h2>Welcome {this.state.newTitle}</h2>
-            <img src='http://www.eatlogos.com/art_logos/png/vector_art_gold_king_cap_logo.png' style={colorImage}  alt="logo" />
-            <p style={colorP}>Karma</p>
-
+            <div className="container">
+              <div className="row">
+                <div className="col order-12" style={header}>
+                  <h2>Welcome {this.state.newTitle} </h2>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
