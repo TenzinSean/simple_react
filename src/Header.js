@@ -19,12 +19,24 @@ class Header extends Component {
           'https://i.pinimg.com/originals/d4/c1/7d/d4c17d48d9e0a5ac9986887163f435ec.jpg',
         'http://longwallpapers.com/Desktop-Wallpaper/travel-wallpaper-1080p-For-Desktop-Wallpaper.jpg',
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93z5hGydj0p1_CRcM6hxHDJhGBviFnQsSk8yij_QInH8MDfhFCQ',
-    'https://stmed.net/sites/default/files/book-wallpapers-28442-2893059.jpg']
+    'https://stmed.net/sites/default/files/book-wallpapers-28442-2893059.jpg'],
+    newTitle: ''
 
     }
+
+    this.onStart = this.onStart.bind(this);
+  }
+
+  onStart() {
+    console.log("hello");
+    this.setState({
+      newTitle: "https://i.pinimg.com/originals/c6/36/1d/c6361d27406824e37b2f613c69537364.jpg"
+    })
   }
   render() {
-
+    const headerOne = {
+      background:"https://i.pinimg.com/originals/c6/36/1d/c6361d27406824e37b2f613c69537364.jpg"
+    }
 
     return(
       <div>
@@ -35,7 +47,7 @@ class Header extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <i className="fab fa-playstation"></i>
+              <i className="fab fa-playstation" style={headerOne} onClick={this.onStart}></i>
             </div>
             <div className="col-md-4">
               <i className="fab fa-spotify"></i>

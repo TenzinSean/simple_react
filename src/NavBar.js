@@ -17,7 +17,6 @@ class NavBar extends Component {
   }
 
   getChange() {
-    console.log('hi');
     var item3 = this.state.title1[Math.floor(Math.random() *this.state.title1.length)];
     this.setState({
       newTitle: item3
