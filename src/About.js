@@ -64,7 +64,7 @@ class About extends Component {
 
     const imgObject = {
       width: "500px",
-      borderRaduis: "30px",
+      borderRaduis: "31px",
       opacity: "none",
       borderRadius: "195px"
 
